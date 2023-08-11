@@ -12,21 +12,28 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class ScrennTask1 {
 	public static void main(String[] args) throws IOException {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Express\\eclipse-workspace\\SeliniumScreenshot\\Driver\\chromedriver.exe");
+	//	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Express\\eclipse-workspace\\SeliniumScreenshot\\Driver\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         
         driver.get("https://www.facebook.com/");
-        driver.manage().window().maximize();
+//        driver.manage().window().maximize();
+//        
+//        TakesScreenshot screenshot = (TakesScreenshot) driver;
+//        
+//        File s = screenshot.getScreenshotAs(OutputType.FILE);
+//        File d = new File("D:\\new folder\\facebook.png");
+//        
+//        FileUtils.copyFile(s, d);
         
-        TakesScreenshot screenshot = (TakesScreenshot) driver;
+        TakesScreenshot screenshot =(TakesScreenshot)driver;
         
-        File s = screenshot.getScreenshotAs(OutputType.FILE);
-        File d = new File("D:\\new folder\\facebook.png");
+        File source = screenshot.getScreenshotAs(OutputType.FILE);
         
-        FileUtils.copyFile(s, d);
+        File Destination = new File("D:\\new folder\\facebook1.png");
+        FileUtils.copyFile(source, Destination);
         
-        
+       
         
         
         
