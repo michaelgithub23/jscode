@@ -38,7 +38,7 @@ public class ScrennTask1 {
        
         System.out.println("***************************");
         
-        
+        System.out.println("@@@@@@@@@");
         
         
         
