@@ -28,13 +28,15 @@ public class ScrennTask1 {
         
         TakesScreenshot screenshot =(TakesScreenshot)driver;
         
+        System.out.println("============");
+        
         File source = screenshot.getScreenshotAs(OutputType.FILE);
         
         File Destination = new File("D:\\new folder\\facebook1.png");
         FileUtils.copyFile(source, Destination);
         
        
-        
+        System.out.println("***************************");
         
         
         
